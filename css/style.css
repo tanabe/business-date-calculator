@@ -1,0 +1,57 @@
+body {
+  font-size: 1em;
+}
+
+div#container {
+  display: table;
+}
+
+div#next,
+div#prev {
+  display: table-cell;
+  vertical-align: middle;
+  height: 280px;
+  padding: 10px;
+  font-size: 2em;
+}
+
+table#calendar {
+  -mox-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  height: 300px;
+  border: 1px #ddd solid;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table#calendar th {
+  border: #ddd solid;
+  border-width: 0 0 1px 1px;
+  background-color: #eee;
+  font-weight: bold;
+  line-height: 120%;
+  text-align: center;
+  padding: 5px;
+}
+
+table#calendar td {
+  width: 50px;
+  border: 1px #ddd solid;
+  border-width: 0 0 1px 1px;
+  text-align: center;
+  padding: 5px;
+}
+
+table#calendar td.active {
+  background-color: #ccc;
+}
+
+table#calendar td.holiday,
+table#calendar td.sun {
+  background-color: #ffe4e1;
+}
+
+table#calendar td.sat {
+  background-color: #e0ffff;
+}
